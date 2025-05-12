@@ -14,13 +14,14 @@ body{
 }
 
 @media only screen and (min-width: 650px) {
-    
 
 .div-text{
-    
     display: flex;
     justify-content: center;
+}
 
+textarea{
+    height: 400px;
 }
 }
 
@@ -39,10 +40,16 @@ textarea{
     max-width: 600px;
     min-width: 320px;
 
-    max-height: 300px;
+    max-height: 600px;
     min-height: 200px;
     resize: none;
-    
+}
+
+
+
+textarea:hover{
+    background-color: rgb(247, 247, 247);  
+    border: 1px, solid, black;  
 }
 
 textarea{
