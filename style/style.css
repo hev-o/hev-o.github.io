@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Terbeous-Regular';
+    src: url('../style/fonts/Terbeous-Regular.ttf');
+    src: url('../style/fonts/Terbeous-Regular.otf');
+}
+
+.tenebris {
+    font-family: 'Terbeous-Regular';
+}
+
+body{
+    margin: 1.5rem;
+}
+
+.div-box{
+    max-width: 800px;
+    margin: auto;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+

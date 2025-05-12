@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cifra</title>
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    
+
+    <div class="div-text">
+
+        <textarea id="textInput" placeholder="Adicione seu texto..."></textarea>
+        <p>oi</p>
+        <textarea class="tenebris" id="textOutput" placeholder="Seu texto aparecerá aqui..."></textarea>
+        
+    </div>
+
+    <script>
+        const inputField = document.getElementById('textInput');
+        const outputField = document.getElementById('textOutput');
+        
+        inputField.addEventListener('input', () => {
+            outputField.textContent = inputField.value || ""
+        })
+
+        outputField.addEventListener('input', () => {
+            inputField.textContent = outputField.value || ""
+        })
+
+
+    </script>
+</body>
+</html>
