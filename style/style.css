@@ -8,8 +8,30 @@
     font-family: 'Terbeous-Regular';
 }
 
+a{
+    box-sizing: 2em;
+    border: solid;
+
+    max-width: 800px;
+    min-width: 320px;
+}
+
+
+
 body{
     margin: 1.5rem;
+    
+}
+
+@media only screen and (min-width: 650px) {
+    
+
+.div-text{
+    
+    display: flex;
+    justify-content: center;
+
+}
 }
 
 .div-box{
@@ -22,5 +44,26 @@ textarea{
     padding: 10px;
     margin: 10px 0;
     box-sizing: border-box;
+    border-radius: .75rem;
+
+    max-width: 600px;
+    min-width: 320px;
+
+    max-height: 300px;
+    min-height: 200px;
+    resize: none;
+    
+}
+
+textarea{
+    font-size: 2.3em;
+}
+
+textarea::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 2rem;
 }
 

@@ -9,13 +9,27 @@
 </head>
 <body>
     
+    <div class="apresentação">
+        <h1>tradutor para linguagem de tenébris</h1>
+
+    </div>
 
     <div class="div-text">
 
         <textarea id="textInput" placeholder="Adicione seu texto..."></textarea>
-        <p>oi</p>
-        <textarea class="tenebris" id="textOutput" placeholder="Seu texto aparecerá aqui..."></textarea>
         
+        <textarea class="tenebris" id="textOutput" placeholder="Tradução aqui..."></textarea>
+        
+    </div>
+
+    <div>
+        <p></p>
+    </div>
+
+    <div class="agradecimento">
+        <p>
+            Fonte utilizada feita por <strong>Nina</strong>
+        </p>
     </div>
 
     <script>
@@ -24,10 +38,6 @@
         
         inputField.addEventListener('input', () => {
             outputField.textContent = inputField.value || ""
-        })
-
-        outputField.addEventListener('input', () => {
-            inputField.textContent = outputField.value || ""
         })
 
 
