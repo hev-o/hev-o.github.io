@@ -157,4 +157,5 @@ p{
 
 .link-bold:hover{
     color: var(--color1);
+    text-shadow: 0 0 10px #000;
 }
