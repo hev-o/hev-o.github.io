@@ -4,65 +4,112 @@
     src: url('../style/fonts/Terbeous-Regular.otf');
 }
 
-.tenebris {
+:root{
+    --color1: #950101;
+    --color2: #3D0000;
+    --color3: #DE1D1D;
+    --color4: #ACACAC;
+    --color5: #2e0101;
+}
+
+.head{
+    width: 1000px;
+    height: 75px;
+    background: var(--color1);
+    background: linear-gradient(180deg, var(--color1) 0%, var(--color2) 100%);
+    font-size: 2.5rem;
+}
+
+#textOutput {
     font-family: 'Terbeous-Regular';
 }
 
 body{
-    margin: 1.5rem;
-    
+    margin: 0;
+    background-color: black;
+    background-image: url(../assets/FOGO.gif);
+    background-attachment: fixed;
+    background-size: cover;    
+}
+
+@media only screen and (max-width:649px){
+
+.TUDO{
+    align-items: center;
+}
+
+.head, .agradecimento{
+    max-width: 475px;
+    min-width: 320px;
+    height: 120px;
+}
+
+.div-text{
+    padding: 10px;
+}
+
+.centraliza{
+    padding-top: 1%;
+    padding-left: 1%;
+    color: var(--color4);
+}
+
+
 }
 
 @media only screen and (min-width: 650px) {
 
+
 .div-text{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-textarea{
+.caixas{
     height: 400px;
+    margin-left: 18%;
 }
 
 }
 
-.div-box{
-    max-width: 800px;
-    margin: auto;
+.div-text{
+    max-width: 1000px;
+    min-height: 400px;
+    max-height: 800px;
+    background: rgba(0, 0, 0, 0.363);
+    
 }
 
-textarea{
+.caixas{
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
     box-sizing: border-box;
+    color: var(--color4);
+    border: 1px solir var(--color2);
     border-radius: .75rem;
+    background-color: var(--color2);
+    border-color: var(--color5);
+    word-break:break-word;
+    overflow: hidden;
 
-    max-width: 600px;
-    min-width: 320px;
+    max-width: 430px;
+    height: 375px;
+    
+    margin: 2.5%;
 
-    max-height: 600px;
-    min-height: 200px;
+    font-size: 2.3em;
+
     resize: none;
 }
 
-
-
 textarea:hover{
-    background-color: rgb(247, 247, 247);  
-    border: 1px, solid, black;  
-}
-
-textarea{
-    font-size: 2.3em;
+    background-color: var(--color5);  
+    border: 1px, solid, var(--color5);  
 }
 
 textarea::placeholder{
     font-family: Arial, Helvetica, sans-serif;
-}
-
-p{
-    font-size: 2rem;
+    color: var(--color4);
 }
 
 .link-bold{
@@ -70,4 +117,27 @@ p{
     color: inherit;
     background: none;
     border: none;
+}
+
+footer{
+    width: 1000px;
+    height: 75px;
+    background: var(--color1);
+    background: linear-gradient(180deg, var(--color2) 0%, var(--color1) 100%);
+    font-size: 2.5rem;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    margin: 0;
+}
+
+.centraliza{
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+    color: var(--color4);
 }
